@@ -1,13 +1,24 @@
+WHILE----------------------------------------------------------------------------------
 Scanner teclado = new Scanner(System.in);
-System.out.print("Entre com um numero inteiro positivo: ");
+System.out.println("Entre com o numero inteiro positivo:");
 int numero = teclado.nextInt();
 long fatorial = 1;
-while (numero > 0) {
-fatorial *=numero --:
+while (numero > 0)  {
+fatorial *= numero--;
  }
-System.out.println("O fatorial desse numero é " + fatorial)
+System.out.println("o fatorial desse numero e: " + fatorial);
 
+DO..WHILE------------------------------------------------------------------------------
+Scanner teclado = new Scanner(System.in);
+System.out.println("Entre com o numero inteiro positivo:");
+int numero = teclado.nextInt();
+long fatorial = 1;
+do{ fatorial *= numero--;
+ }
+while (numero > 0);
+System.out.println("o fatorial desse numero e: " + fatorial);
 
+FOR------------------------------------------------------------------------------------
 Scanner teclado = new Scanner(System.in);
 System.out.print("Entre com um numero inteiro positivo:"); 
 int numero = teclado.nextInt();
