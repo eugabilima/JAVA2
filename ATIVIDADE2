@@ -1,0 +1,75 @@
+1)--------------------------------------------------------------------------------------------
+Scanner tec = new Scanner (System.in);
+
+int idade;
+int mes = 30;
+int dia;
+
+System.out.print("coloque sua idade ");
+idade = tec.nextInt();
+
+System.out.print("coloque seu mes");
+mes = tec.nextInt();
+	        
+System.out.print("coloque os dias ");
+dia = tec.nextInt();
+int totaldias = (idade*365)+(mes*30)+dia;
+
+System.out.println("A idade em dias é: " + totaldias);	
+	}
+}
+2)--------------------------------------------------------------------------------------------
+public void algaritmo() {
+System.out.println("coloque o valor do IPI");
+int IPI = tec.nextInt();
+System.out.println("coloque o valor  um");
+
+int valor1 = tec.nextInt();
+System.out.println("coloque a quantidade ");
+
+int quant1 = tec.nextInt();
+System.out.println("coloque o valor 2 ");
+
+int valor2 = tec.nextInt();
+System.out.println("coloque a quantidade");
+
+int quant2 = tec.nextInt();
+double result=(valor1*quant1 + valor2*quant2)*(IPI/100 + 1);
+
+System.out.println(result);	  
+}}
+3)--------------------------------------------------------------------------------------------
+public void quest3() {
+	
+	
+	 for (int i = 1; i <= 20; i++){
+System.out.println("Eu, Davi gosto de estudar Algoritmos!");
+        
+	 }
+}
+}
+4)--------------------------------------------------------------------------------------------
+	public class contador {
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        int contador = 0;
+
+	        for (int a = 1; a <= 20; a++) {
+	            System.out.print("Digite o " + a + " número: ");
+	            int numero = scanner.nextInt();
+
+	            if (numero > 8) {
+	                contador++;
+	            }
+	        }
+
+	        System.out.println("Números maiores que 8: " + contador);
+
+}}}
+5)--------------------------------------------------------------------------------------------
+
+6)--------------------------------------------------------------------------------------------
+
+7)--------------------------------------------------------------------------------------------
+
+8)--------------------------------------------------------------------------------------------
