@@ -13,7 +13,7 @@ double cm = metro*100;
 System.out.println("Sua grandeza em centímetros é: "+cm+"cm");
 
 	}
-}
+} 
 -----------------------------------------------------------------------------------
 
 2)
