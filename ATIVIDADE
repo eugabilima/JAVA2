@@ -7,7 +7,7 @@ int valor = numero * mutiplicar;
 System.out.println("1 x " + multiplicar + " e igual a: " + valor);
 multiplicar = multiplicar + 1;
  }}}
-
+ 
 2)
 Scanner tec = new Scanner(System.in);
 System.out.println("Entre com qualquer valor");
