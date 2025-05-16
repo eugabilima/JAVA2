@@ -23,12 +23,12 @@ import java.util.Scanner;
 public class questão2 {
    public void sal() {
 		Scanner tec = new Scanner(System.in);
-        System.out.println("Para começarmos, insira o seu salário base: ");
-        double sb = tec.nextDouble();
-        double imposto = sb*0.21;
-        double gratificacao = sb*0.10;
+        System.out.println("Insira o seu salário base: ");
+        double salariobase = tec.nextDouble();
+        double imposto = salariobase*0.21;
+        double gratificacao = salariobase*0.10;
         System.out.println("O valor do imposto que você vai pagar é: "+ imposto + " e o valor da gratificação que você vai receber é " + gratificacao);
-        double total = (sb+gratificacao)-imposto;
+        double total = (salariobase+gratificacao)-imposto;
         System.out.println("O salário total com imposto e gratificação é: "+total);
    }
 }
@@ -48,12 +48,10 @@ public class questão3 {
             System.out.println("Qual a sua idade?");
             int idade = tec.nextInt();
             if (idade>18) {
-				System.out.println(nome+ ", sua entrada foi permitida");
-			} else {
-				System.out.println("Entrada negada, você é menor de idade");
-			}
-	   }
-}
+		System.out.println(nome+ ", sua entrada foi permitida");
+} else {
+		System.out.println("Entrada negada, você é menor de idade");
+}}}
 --------------------------------------------------------------------------------------------
 4)
 package ATIVIDADE;
@@ -62,7 +60,7 @@ import java.util.Scanner;
 public class questão4 {
      public void emprestimo() {
 			Scanner tec = new Scanner(System.in);
-            System.out.println("Para solicitar o emprestimo antes, coloque o seu salário");
+            System.out.println("Para solicitar o emprestimo coloque o seu salário");
             double salario = tec.nextDouble();
             System.out.println("Qual o valor da prestação? ");
             double presta = tec.nextDouble();
