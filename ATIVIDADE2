@@ -4,7 +4,7 @@ Scanner tec = new Scanner (System.in);
 int idade;
 int mes = 30;
 int dia;
-
+ 
 System.out.print("coloque sua idade ");
 idade = tec.nextInt();
 
