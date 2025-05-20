@@ -1,0 +1,123 @@
+1)-----------------------------------------------------------------------------------------
+public static void main(String[] args) {   
+
+Scanner tec = new Scanner(System.in);
+		
+System.out.println("Entre com o primeiro numero: ");
+int n1 = tec.nextInt();
+System.out.println("Entre com o segundo numero: ");
+int n2 = tec.nextInt();
+		
+if (n1 == n2  ) {
+System.out.print(" o numero 1 e igual ao 2 ");
+} 
+if (n1 != n2  ) {
+System.out.print(" o numero 1 nao e igual 2 ");
+} 
+if (n1 > n2  ) {
+System.out.print(" o numero 1 e maior que o numero 2 ");
+} 
+if (n1 < n2  ) {
+System.out.print(" o numero 1 ne menor que o numero 2 ");
+} 
+if (n1 >= n2  ) {
+System.out.print(" o numero 1 e maior igual que o numero  2 ");
+} 
+if (n1 <= n2  ) {
+System.out.print(" o numero 1 e menor igual que o numero 2 ");
+} 
+System.out.println("----------");
+if (n2 == n1  ) {
+System.out.print(" o numero 1 e igual ao 2 ");
+} 
+if (n2 != n1 ) {
+System.out.print(" o numero 1 nao e igual 2 ");
+} 
+if (n2 > n1  ) {
+System.out.print(" o numero 1 e maior que o numero 2 ");
+} 
+if (n2 < n1 ) {
+System.out.print(" o numero 1 ne menor que o numero 2 ");
+} 
+if (n2 >= n1  ) {
+System.out.print(" o numero 1 e maior igual que o numero  2 ");
+} 
+if (n2 <= n1  ) {
+System.out.print(" o numero 1 e menor igual que o numero 2 ");	           
+}}}
+
+2)-------------------------------------------------------------------------------------------------------------
+System.out.println("Entre com um numero: ");
+int numero = tec.nextInt();
+		
+switch (numero) {
+case  1: {
+System.out.println("entrar");
+break;
+}
+		
+case  2: {
+System.out.println("entrar");
+break;
+}
+
+case  3: {
+System.out.println("entrar");
+break;
+}
+
+default:
+System.out.println("invalido ");
+}}}
+
+3)-------------------------------------------------------------------------------------------------------
+Scanner tec = new Scanner(System.in);
+System.out.println("Insira o valor do carro de fabrica");
+double valor = tec.nextDouble();
+double dist = (valor * 0.28)+valor;
+double total = (valor * 0.45)+dist;
+System.out.println("O valor total do carro na distribuidora é: "+total);
+}}
+
+4)-------------------------------------------------------------------------------------------------------
+Scanner tec = new Scanner(System.in);
+System.out.println("Adicione uma quantia");
+double quantia1 = tec.nextDouble();
+System.out.println("Opção 1 = Sacar, Opção 2 = obter saldo?");
+int valor = tec.nextInt();
+if (valor == 1) {
+if (quantia1 == 1) {
+System.out.println("Qual o valor que você quer saltar");
+double saldo1 = tec.nextDouble();
+if (saldo1 > quantia1) {
+System.out.println("Valor mais alto que o possuido");
+} else{
+{
+double imposto = saldo1 * 0.05; 
+quantia1 = (saldo1 + imposto); 
+System.out.println("Valor sacado com sucesso! Saldo restante: " + quantia1);
+}}
+}}}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
