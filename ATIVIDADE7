@@ -1,0 +1,82 @@
+1) ----------------------------------------------------------------------------------------------------------------
+int sexo;
+		int civil;
+		int alternativa;
+		
+		System.out.println("Entre com o seu nome: ");
+		String nome = tec.nextLine();
+		
+		System.out.println("Digite 1 para feminino, Digite 2 para masculino");
+		sexo = tec.nextInt();
+
+	if (sexo == 1) {
+			System.out.println("Ola " + nome + " seu sexo e feminino");
+			nome = tec.nextLine();
+			
+	} else if(sexo == 2){
+		System.out.println("Ola " + nome + " seu sexo e masculino");
+		nome = tec.nextLine();
+
+	}
+	else{
+		System.out.println("Nao temos essa opcao");
+	}
+	
+	System.out.println("Digite 1 para Casada(o), Digite 2 para Solteira(o)");
+	alternativa = tec.nextInt();
+
+if (alternativa == 1) {
+		System.out.println("Me  informe o seu tempo de casada(o)");
+		civil = tec.nextInt();
+		
+} else if(alternativa == 2){
+	System.out.println("Certo!");
+	 civil = tec.nextInt();	
+}
+else{
+	System.out.println("Nao temos essa opcao");
+}}}
+
+2)----------------------------------------------------------------------------------------------------------------
+System.out.println("Insira o valor de 1");
+int v1 = tec.nextInt();	      
+System.out.println("Insira o valor de 2");
+int v2 = tec.nextInt();	      
+if (v1 == v2) {
+int v3 = v1+v2;
+System.out.println("o valor 3 e: " +v3);
+} else {
+int v3 = v1*v2;
+System.out.println("o valor 3 e: " +v3);
+}}}
+
+3)---------------------------------------------------------------------------------------------------------------
+System.out.println("Qual seu peso");
+double peso = tec.nextDouble();
+System.out.println("Qual sua altura");
+double altura = tec.nextDouble();
+     
+double imc = peso/(altura*altura);
+    
+if (imc < 18.5) {
+System.out.println("Você está abaixo do peso");
+}if ((imc > 18.5) && (imc <= 25)) {
+System.out.println("Você está no peso normal");
+}if ((imc > 25) && (imc <= 30)) {
+System.out.println("Você está acima do peso");
+}if (imc > 30) {
+System.out.println("Você está obeso");
+}}}
+4)----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
