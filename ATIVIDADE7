@@ -1,59 +1,58 @@
 1) ----------------------------------------------------------------------------------------------------------------
+int estado;
 int sexo;
-		int civil;
-		int alternativa;
+int casateira;
 		
-		System.out.println("Entre com o seu nome: ");
-		String nome = tec.nextLine();
+System.out.println("Cadastre com o seu nome: ");
+String nome = tec.nextLine();
 		
-		System.out.println("Digite 1 para feminino, Digite 2 para masculino");
-		sexo = tec.nextInt();
+System.out.println("Digite 1 para feminino, Digite 2 para masculino");
+sexo = tec.nextInt();
 
-	if (sexo == 1) {
-			System.out.println("Ola " + nome + " seu sexo e feminino");
-			nome = tec.nextLine();
+if (sexo == 1) {
+System.out.println("Ola " + nome + " seu sexo e feminino");
+nome = tec.nextLine();
 			
-	} else if(sexo == 2){
-		System.out.println("Ola " + nome + " seu sexo e masculino");
-		nome = tec.nextLine();
+} else if(sexo == 2){
+System.out.println("Ola " + nome + " seu sexo e masculino");
+nome = tec.nextLine();
 
-	}
-	else{
-		System.out.println("Nao temos essa opcao");
-	}
+}else{
+System.out.println("Nao temos essa opcao");
+}
 	
-	System.out.println("Digite 1 para Casada(o), Digite 2 para Solteira(o)");
-	alternativa = tec.nextInt();
+System.out.println("Digite 1 para Casada(o), Digite 2 para Solteira(o)");
+casateira = tec.nextInt();
 
 if (alternativa == 1) {
-		System.out.println("Me  informe o seu tempo de casada(o)");
-		civil = tec.nextInt();
+System.out.println("Quanto tempo de casada(o)? ");
+estado = tec.nextInt();
 		
-} else if(alternativa == 2){
-	System.out.println("Certo!");
-	 civil = tec.nextInt();	
-}
-else{
-	System.out.println("Nao temos essa opcao");
+} else if(casateira == 2){
+System.out.println("Certo!");
+estado = tec.nextInt();
+
+}else{
+System.out.println("Nao temos essa opção");
 }}}
 
 2)----------------------------------------------------------------------------------------------------------------
-System.out.println("Insira o valor de 1");
+System.out.println("Adicione o valor de 1");
 int v1 = tec.nextInt();	      
-System.out.println("Insira o valor de 2");
+System.out.println("Adicione o valor de 2");
 int v2 = tec.nextInt();	      
 if (v1 == v2) {
 int v3 = v1+v2;
-System.out.println("o valor 3 e: " +v3);
+System.out.println("o valor 3 é: " +v3);
 } else {
 int v3 = v1*v2;
-System.out.println("o valor 3 e: " +v3);
+System.out.println("o valor 3 é: " +v3);
 }}}
 
 3)---------------------------------------------------------------------------------------------------------------
-System.out.println("Qual seu peso");
+System.out.println("Coloque o seu peso");
 double peso = tec.nextDouble();
-System.out.println("Qual sua altura");
+System.out.println("Coloque a sua altura");
 double altura = tec.nextDouble();
      
 double imc = peso/(altura*altura);
@@ -68,43 +67,32 @@ System.out.println("Você está acima do peso");
 System.out.println("Você está obeso");
 }}}
 4)----------------------------------------------------------------------------------------------------------------
-System.out.println("Insira o nome do produto");
-		        String nome = tec.nextLine();
-		        System.out.println("Qual o valor de etiqueta do produto");
-		        double preco = tec.nextDouble();
-		        System.out.println("Metodo de pagamento:\n1- A vista em dinheiro \n2- A vista em cartão \n3- Em duas vezes \n4- Em duas vezes, com juros");
-		        int alternativa = tec.nextInt();
-			
-		        if (alternativa == 1) {
-		            double total = preco-(preco*0.10);
-		             System.out.println("O valor ficou: "+ total+" reais.");
-		         }
-		         if (alternativa == 2) {
-		            double total = preco-(preco*0.15);
-		            System.out.println("O valor total ficou: "+ total+" reais.");
-		         }
-		         if (alternativa == 3) {
-		            double total = preco;
-		            System.out.println("O valor sem nenhum acrescimo ou desconto ficou: "+ total+" reais.");
-		         }
-		         if (alternativa == 4) {
-		            double total = preco+(preco*0.10);
-		            System.out.println("O valor com juros de 10 porcento ficou: "+ total+" reais.");
-		         }
-		         
-			else {
-				System.out.println("Nao temos essa opcao");
-			}
-		}
-		
-	}
-	 
+System.out.println("Adicione o nome do produto");
+String nome = tec.nextLine();
 
+System.out.println("Insira o valor de etiqueta do produto");
+double preco = tec.nextDouble();
 
-
-
-
-
+System.out.println("Metodo de pagamento: 1 = A vista em dinheiro / 2 = A vista em cartão / Em duas vezes / 3 Em duas vezes, com juros");
+int alternativa = tec.nextInt();
+if (alternativa == 1) {
+double total = preco-(preco*0.10);
+System.out.println("O valor ficou: "+ total+" reais.");
+}
+if (alternativa == 2) {
+double total = preco-(preco*0.15);
+System.out.println("O valor total ficou: "+ total+" reais.");
+}
+if (alternativa == 3) {
+double total = preco;
+System.out.println("O valor sem nenhum acrescimo ou desconto ficou: "+ total+" reais.");
+}
+if (alternativa == 4) {
+double total = preco+(preco*0.10);
+System.out.println("O valor com juros de 10 porcento ficou: "+ total+" reais.");
+}else {
+System.out.println("Nao temos essa opcao");
+}}}
 
 
 
