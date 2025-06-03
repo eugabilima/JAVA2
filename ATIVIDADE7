@@ -68,7 +68,37 @@ System.out.println("Você está acima do peso");
 System.out.println("Você está obeso");
 }}}
 4)----------------------------------------------------------------------------------------------------------------
-
+System.out.println("Insira o nome do produto");
+		        String nome = tec.nextLine();
+		        System.out.println("Qual o valor de etiqueta do produto");
+		        double preco = tec.nextDouble();
+		        System.out.println("Metodo de pagamento:\n1- A vista em dinheiro \n2- A vista em cartão \n3- Em duas vezes \n4- Em duas vezes, com juros");
+		        int alternativa = tec.nextInt();
+			
+		        if (alternativa == 1) {
+		            double total = preco-(preco*0.10);
+		             System.out.println("O valor ficou: "+ total+" reais.");
+		         }
+		         if (alternativa == 2) {
+		            double total = preco-(preco*0.15);
+		            System.out.println("O valor total ficou: "+ total+" reais.");
+		         }
+		         if (alternativa == 3) {
+		            double total = preco;
+		            System.out.println("O valor sem nenhum acrescimo ou desconto ficou: "+ total+" reais.");
+		         }
+		         if (alternativa == 4) {
+		            double total = preco+(preco*0.10);
+		            System.out.println("O valor com juros de 10 porcento ficou: "+ total+" reais.");
+		         }
+		         
+			else {
+				System.out.println("Nao temos essa opcao");
+			}
+		}
+		
+	}
+	 
 
 
 
