@@ -1,0 +1,73 @@
+public static void main(String[] args) {
+Scanner tec = new Scanner(System.in);
+System.out.println("Menu");
+System.out.println("1 - Cadastrar Paciente");
+System.out.println("2 - Cadastrar Médico");
+System.out.println("3 - Registrar Consulta");
+System.out.println("4 - Ver Consultas de Paciente");
+System.out.println("5 - Sair");
+int o = tec.nextInt();
+if (o == 1) {
+Paciente texto1 = new Paciente();
+texto1.pac();
+}
+else if (o == 2) {
+}
+else if (o == 3) {
+}
+else if (o == 4) {               
+}
+else if (o == 5) {      
+}
+else {
+}}}
+-------------------------------------------------------------------------------------------------------------------
+package aula009;
+import java.util.Scanner;
+
+public class Paciente {
+public void paciente(){
+Scanner tec = new Scanner(System.in);
+System.out.println("Nome do paciente:");
+String nomePaciente = tec.nextLine();
+
+System.out.println("CPF:");
+String cpf = tec.nextLine();
+
+System.out.println("Paciente cadastrado: "+nomePaciente);
+regconsulta text1 = new regconsulta();
+text1.regsc(cpf);
+}}
+---------------------------------------------------------------------------------------------------------------------
+public class medico {
+public void medico(){
+Scanner tec = new Scanner(System.in);
+
+System.out.println("Nome do médico:");
+String nomeMedico = tec.nextLine();
+
+System.out.println("Especialidade:");
+String especialidade = tec.nextLine();
+
+System.out.println("Cadastrado!");
+    }
+}
+----------------------------------------------------------------------------------------------------------------
+public class registroconsulta extends Paciente {
+Scanner tec = new Scanner(System.in);
+
+System.out.println("Nome do médico:");
+String medicoConsulta = tec.nextLine();
+
+System.out.println("Qual a data da consulta:");
+int data = tec.nextInt();
+
+System.out.println("Consulta registrada.");
+    }
+}
+----------------------------------------------------------------------------------------------------------------
+public class encerrar {
+public void fim(){
+System.out.println("Obrigado pelo cadastro.");
+}}
+
