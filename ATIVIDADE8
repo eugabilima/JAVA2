@@ -8,8 +8,6 @@ System.out.println("4 - Ver Consultas de Paciente");
 System.out.println("5 - Sair");
 int o = tec.nextInt();
 if (o == 1) {
-Paciente texto1 = new Paciente();
-texto1.pac();
 }
 else if (o == 2) {
 }
@@ -24,10 +22,10 @@ else {
 -------------------------------------------------------------------------------------------------------------------
 package aula009;
 import java.util.Scanner;
+Scanner tec = new Scanner(System.in);
 
 public class Paciente {
 public void paciente(){
-Scanner tec = new Scanner(System.in);
 System.out.println("Nome do paciente:");
 String nomePaciente = tec.nextLine();
 
