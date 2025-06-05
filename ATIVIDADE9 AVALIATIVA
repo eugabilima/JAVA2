@@ -140,26 +140,15 @@ text2.consult(nomeAnimal,idade, cpf, nomeDono, this.especialidade, this.data);
 }}
 CONSULTA--------------------------------------------------------
     private String cpf2;
-    public void consult(String animal,int idade,String Cpf,String nomeDono,String especialidade,String data){
+    public void consult(String nomeAnimal,int idade,String cpf,String nomeDono,String especialidade,String data){
     Scanner tec = new Scanner(System.in);
-        System.out.println("Insira o cpf do cliente para ver o historico");
+        System.out.println("Para visualizar o historico, insira o CPF: ");
         this.cpf2 = tec.nextLine();
         if (cpf2.equals(Cpf)) {
-            System.out.println(nomeDono+" CPF: "+ Cpf+" com o pet: "+animal+" com "+ idade+" anos "+" marcou consulta para um "+especialidade+" na data "+ data);
+            System.out.println(nomeDono+" CPF: "+ cpf+" pet: "+nomeAnimal+" com os seus "+ idade+" anos "+" marcou consulta para um(a) "+especialidade+" na data "+ data);
         } else{
-            System.out.println("Cpf invalido ou distinto");
+            System.out.println("CPF invalido");
         }
-        
-        
-        
+                
     }
 }
-
-
-
-
-
-
-
-
-
