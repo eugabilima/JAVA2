@@ -144,7 +144,7 @@ CONSULTA--------------------------------------------------------
     Scanner tec = new Scanner(System.in);
         System.out.println("Para visualizar o historico, insira o CPF: ");
         this.cpf2 = tec.nextLine();
-        if (cpf2.equals(Cpf)) {
+        if (cpf2.equals(cpf)) {
             System.out.println(nomeDono+" CPF: "+ cpf+" pet: "+nomeAnimal+" com os seus "+ idade+" anos "+" marcou consulta para um(a) "+especialidade+" na data "+ data);
         } else{
             System.out.println("CPF invalido");
