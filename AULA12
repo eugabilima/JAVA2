@@ -1,5 +1,7 @@
 Exception: hierarquia de classes que representam exceções tratáveis
 Error: erro grave que normalmente não pode ser tratado;
+
+*METODO PARA TRATAMENTO DE ERROS (NÃO É O IF ELSE!!!!!)*
        
 //try {;
 //System.out.println("insira seu nome");
