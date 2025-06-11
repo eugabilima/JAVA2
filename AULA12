@@ -1,0 +1,48 @@
+Exception: hierarquia de classes que representam exceções tratáveis
+Error: erro grave que normalmente não pode ser tratado;
+       
+//try {;
+//System.out.println("insira seu nome");
+//int nome = tec.nextInt();
+//boolean nomes = equals(nome);
+
+boolean = VERDADEIRO OU FALSO
+       
+//} catch (Exception e) {
+//System.out.println("Não é texto");
+//}
+
+//        Bloco try/catch:;
+//try: declara bloco de código que pode produzir exceções
+//catch: trata exceções que ocorrerem no bloco try
+//finally: declara bloco de código que sempre executa, com ou sem exceção ocorrida (geralmente para código de "limpeza")
+//throw: lança exceção explicitamente
+//throws: indica exceções que um método/classe podem produzir
+
+
+CODIGO PARA UTILIZAR:
+
+package teste1;
+import java.util.Scanner;
+
+public class testenome {
+    Scanner tec = new Scanner(System.in);
+    private void nome(){
+         int nome1 = 0;
+     
+       
+        try {
+               System.out.println("Entre com o seu nome");
+       int nome = tec.nextInt();
+       
+             boolean equals = equals(nome1);
+       
+        } catch (Exception e) {
+           System.out.println("Apenas números são aceitos");
+        }
+    }
+    public void no(){
+        nome();
+    }
+  
+}
