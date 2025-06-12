@@ -1,1 +1,33 @@
+package atv;
+import java.util.Scanner;
+public class CS {
+public static Scanner input = new Scanner(System.in);
+	
+private static double salario, valorImposto, valorGratificacao, salarioFinal;
 
+	public static void informarSalario() {
+
+		System.out.println("Adicione o seu salário?");
+		try {
+			slr = input.nextDouble();
+		} catch (Exception e) {
+			System.out.println("Insira um valor válido.");
+		}
+		
+		CS();
+	}
+	
+	public static void calcularSalario() {
+		valorGratificacao = slr * 0.08;
+		
+		if (slr > 3000) {
+			valorImposto = slr * 0.11;
+		} else if (slr > 1500) {
+			valorImposto = slr * 0.05;
+		}
+		salarioFinal = slr + valorGratificacao - valorImposto;
+		
+		System.out.println("Seu salário final foi: " + salarioFinal + "\n Gratificação de: R$" 
+		+ valorGratificacao + "\n Imposto: R$" + valorImposto + "\n ");
+	}
+}
