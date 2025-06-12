@@ -1,1 +1,19 @@
 
+	public void fam() {
+		int [] familia = new int [11];
+		 Scanner tec = new Scanner(System.in);
+		
+		for(int i = 1; i<11; i ++) {
+		 System.out.println("Quantas pessoas tem a família?");
+		 familia[i] = tec.nextInt();
+		}
+		
+		for (int i = 0; i < 10; i ++) {
+			if (familia[i] > 5)
+			System.out.println("Família " + i + " tem mais de 5 pessoas.");
+		}
+	
+	}
+
+	
+}
