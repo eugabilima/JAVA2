@@ -1,1 +1,77 @@
+private String[] nome = new String[999];
+	    private double[] preco = new double[999];
+	    private int[] codigo = new int[999];
+	    private int[] quantidade = new int[999];
+	    private int totalProdutos = 0;
 
+	public void esto() {
+
+		        Scanner tec = new Scanner(System.in);
+
+		        System.out.println("estoque de produtos");
+      while (true) {
+
+		            System.out.println("Nome do produto que você quer cadastrar (ou 'sair' para encerrar):");
+
+		            String n = tec.nextLine();
+
+		            if (n.equalsIgnoreCase("sair")) { 
+
+		                break;
+
+		            }
+
+		            System.out.println("Preço do produto:");
+		            double p = tec.nextDouble();
+		            System.out.println("Código do produto:");
+		            int c = tec.nextInt();
+		            System.out.println("Quantidade do produto:");
+		            int quant = tec.nextInt();
+		            tec.nextLine(); 
+		            nome[totalProdutos] = n;
+		            preco[totalProdutos] = p;
+		            codigo[totalProdutos] = c;
+		            quantidade[totalProdutos] = quant;
+		            totalProdutos++;
+
+		            if (totalProdutos >= nome.length) {
+
+		                System.out.println("Lista de produtos cheia!");
+
+		                break;
+
+		            }
+
+		        }
+
+		        System.out.println("Lista de todos os produtos cadastrados:");
+
+		        for (int j = 0; j < totalProdutos; j++) { 
+		            System.out.println("Produto: " + nome[j] 
+		                + ", Preço: " + preco[j] 
+		                + ", Código: " + codigo[j]
+		                + ", Quantidade: " + quantidade[j]);
+		            }
+
+		        System.out.println("Digite o código do produto que deseja vender:");
+		        int codVenda = tec.nextInt();
+		        System.out.println("Digite a quantidade que deseja vender:");
+		        int qtdVenda = tec.nextInt();
+		        boolean produtoEncontrado = false;
+		        for (int j = 0; j < totalProdutos; j++) {
+		            if (codigo[j] == codVenda) {
+		                produtoEncontrado = true;
+		                if (quantidade[j] >= qtdVenda) { 
+		                    quantidade[j] -= qtdVenda;
+		                    System.out.println("Venda realizada com sucesso!");
+		                    System.out.println("Nova quantidade do produto " + nome[j] + ": " + quantidade[j]);
+		                } else {
+		                    System.out.println("Estoque insuficiente para realizar a venda.");
+		                }
+		                break; 
+
+		            }
+
+		        }
+	}
+}
