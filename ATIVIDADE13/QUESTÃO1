@@ -1,1 +1,25 @@
-.
+package quesstao1;
+import java.util.Scanner;
+public class questao1 {
+
+	 Scanner tec = new Scanner(System.in);
+	public void questao1() {
+		
+        System.out.println("Digite o nome do aluno:");
+        String Nome = tec.nextLine();
+
+       
+        double[] nota = new double[2];
+
+        System.out.println("Adicione a primeira nota:");
+        nota[0] = tec.nextDouble();
+        System.out.println("Digite a segunda nota:");
+        nota[1] = tec.nextDouble();
+
+        System.out.println(Nome);
+        System.out.println(nota[0]);
+        System.out.println(nota[1]);
+  
+	
+	}		
+}
