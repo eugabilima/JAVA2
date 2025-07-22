@@ -1,0 +1,22 @@
+package main;
+import java.util.Scanner;
+public class questao2 {
+	
+Scanner tec = new Scanner(System.in);
+public void questao2() {
+
+double[] nota = new double[2];
+		  
+System.out.println("Qual o nome do aluno:");
+String nome = tec.nextLine();
+System.out.println("Qual a primeira nota:");
+nota[0] = tec.nextDouble();
+System.out.println("Qual a segunda nota:");
+nota[1] = tec.nextDouble();
+		
+System.out.println(nome);
+System.out.println(nota[0]);
+System.out.println(nota[1]);
+
+		}	
+}
