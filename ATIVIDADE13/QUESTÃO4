@@ -1,1 +1,66 @@
+package quesstao4;
+import java.util.Scanner;
+public class questao4 {
 
+	public void questao4() {
+		Scanner tec = new Scanner(System.in);
+
+		int[] turma = new int [6]; 
+		String[] nome = new String [6];
+		int [] nota =  new int [10];		
+		
+	System.out.println("Adicione o seu nome");
+	nome [0]= tec.next();
+	System.out.println("Adicione o numero da sua turma");
+    turma [0] = tec.nextInt();
+    System.out.println("Digite a primeira nota:");
+    nota [0]= tec.nextInt();
+    System.out.println("coloque a sua segunda nota:");
+    nota [1]= tec.nextInt();     
+     
+     System.out.println("Adicione o seu nome");
+	nome [1]= tec.next();
+     System.out.println("Adicione o numero da sua turma");
+     turma [1] = tec.nextInt();
+     System.out.println("Digite a primeira nota:");
+     nota [2]= tec.nextInt();
+     System.out.println("Digite a segunda nota:");
+     nota [3]= tec.nextInt();     
+     
+     System.out.println("Adicione o seu nome");
+	nome [2]= tec.next();
+     System.out.println("Adicione o numero da sua turma");
+     turma [2] = tec.nextInt();
+     System.out.println("Digite a primeira nota:");
+     nota [4]= tec.nextInt();
+     System.out.println("Digite a segunda nota:");
+     nota [5]= tec.nextInt();
+     
+     
+     System.out.println("Adicione o seu nome");
+		nome [3]= tec.next();
+     System.out.println("Adicione o numero da sua turma");
+     turma [3] = tec.nextInt();
+     System.out.println("Digite a primeira nota:");
+     nota [6]= tec.nextInt();
+     System.out.println("Digite a segunda nota:");
+     nota [7]= tec.nextInt();
+     
+     
+     System.out.println("Adicione o seu nome");
+		nome [4]= tec.next();
+     System.out.println("Adicione o numero da sua turma");
+     turma [4] = tec.nextInt();
+     System.out.println("Digite a primeira nota:");
+     nota [8]= tec.nextInt();
+     System.out.println("Digite a segunda nota:");
+     nota [9]= tec.nextInt();
+     
+     
+  System.out.println("o aluno " + nome [0] +"é da turma " + turma [0]+ "suas notas foram " + nota [0]+ "e " + nota [1]);
+  System.out.println("o aluno " + nome [1] +"é da turma " + turma [1]+ "suas notas foram " + nota [2]+ "e " + nota [3]);
+  System.out.println("o aluno " + nome [2] +"é da turma " + turma [2]+ "suas notas foram " + nota [4]+ "e " + nota [5]);
+  System.out.println("o aluno " + nome [3] +"é da turma " + turma [3]+ "suas notas foram " + nota [6]+ "e " + nota [7]);
+  System.out.println("o aluno " + nome [4] +"é da turma " + turma [4]+ "suas notas foram " + nota [8]+ "e " + nota [9]);
+		
+	}
