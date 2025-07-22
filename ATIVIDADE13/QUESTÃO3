@@ -3,5 +3,39 @@ import java.util.Scanner;
 public class questao3 {
 	
 	Scanner tec = new Scanner(System.in);
+
+	int[] turma= new int [5]; 
+		String[] nome= new String [5]; 
+		
 	
-}
+	System.out.println("Adicione seu nome");
+	nome [0]= tec.next();
+	System.out.println("Adicione sua turma");
+    turma [0] = tec.nextInt();
+    
+     System.out.println("Adicione seu nome");
+	nome [1]= tec.next();
+     System.out.println("Adicione sua turma");
+     turma [1] = tec.nextInt();
+     
+     System.out.println("Adicione seu nome");
+	nome [2]= tec.next();
+     System.out.println("Adicione sua turma");
+     turma [2] = tec.nextInt();
+     
+     System.out.println("Adicione seu nome");
+	nome [3]= tec.next();
+     System.out.println("Adicione sua turma");
+     turma [3] = tec.nextInt();
+     
+     System.out.println("Adicione seu nome");
+	nome [4]= tec.next();
+     System.out.println("Adicione sua turma");
+     turma [4] = tec.nextInt();
+     
+  System.out.println("Você" + nome [0] +"é da turma " + turma [0]);
+  System.out.println("Você" + nome [1] +"é da turma " + turma [1]);
+  System.out.println("Você" + nome [2] +"é da turma " + turma [2]);
+  System.out.println("Você" + nome [3] +"é da turma " + turma [3]);
+  System.out.println("Você + nome [4] +"é da turma " + turma [4]);
+	}
