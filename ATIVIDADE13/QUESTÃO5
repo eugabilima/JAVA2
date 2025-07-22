@@ -1,1 +1,61 @@
+Scanner tec = new Scanner(System.in);
 
+		int[] turma= new int [5]; 
+		String[] nome= new String [5];
+		int [] nota =  new int [10];
+		int []  media = new int [10];
+		
+		
+		
+	System.out.println("coloque o seu nome");
+	nome [0]= tec.next();
+	System.out.println("coloque o numero da sua turma");
+     turma [0] = tec.nextInt();
+     System.out.println("coloque a sua primeira  nota ");
+     nota [0]= tec.nextInt();
+     System.out.println("coloque a sua segunda  nota ");
+     nota [1]= tec.nextInt();
+     System.out.println("coloque o seu nome");
+	nome [1]= tec.next();
+     System.out.println("coloque o numero da sua turma");
+     turma [1] = tec.nextInt();
+     System.out.println("coloque a sua primeira  nota ");
+     nota [2]= tec.nextInt();
+     System.out.println("coloque a sua segunda  nota ");
+     nota [3]= tec.nextInt();
+     System.out.println("coloque o seu nome");
+		nome [2]= tec.next();
+     System.out.println("coloque o numero da sua turma");
+     turma [2] = tec.nextInt();
+     System.out.println("coloque a sua primeira  nota ");
+     nota [4]= tec.nextInt();
+     System.out.println("coloque a sua segunda  nota ");
+     nota [5]= tec.nextInt();
+     System.out.println("coloque o seu nome");
+		nome [3]= tec.next();
+     System.out.println("coloque o numero da sua turma");
+     turma [3] = tec.nextInt();
+     System.out.println("coloque a sua primeira  nota ");
+     nota [6]= tec.nextInt();
+     System.out.println("coloque a sua segunda  nota ");
+     nota [7]= tec.nextInt();
+     System.out.println("coloque o seu nome");
+		nome [4]= tec.next();
+     System.out.println("coloque o numero da sua turma");
+     turma [4] = tec.nextInt();
+     System.out.println("coloque a sua primeira  nota ");
+     nota [8]= tec.nextInt();
+     System.out.println("coloque a sua segunda  nota ");
+     nota [9]= tec.nextInt();
+     
+     media [0] = nota [0] + nota [1] /2;
+     media [1] = nota [2] + nota [3] /2;
+     media [2] = nota [4] + nota [5] /2;
+     media  [3]= nota [6] + nota [7] /2;
+     media [4]= nota [8] + nota [9] /2;
+  System.out.println("o aluno " + nome [0] +"é da turma " + turma [0]+ "suas notas foram " + nota [0]+ "e " + nota [1]+ "sua media foi " + media [0]);
+  System.out.println("o aluno " + nome [1] +"é da turma " + turma [1]+ "suas notas foram " + nota [2]+ "e " + nota [3]+ "sua media foi " + media [1]);
+  System.out.println("o aluno " + nome [2] +"é da turma " + turma [2]+ "suas notas foram " + nota [4]+ "e " + nota [5]+ "sua media foi " + media [2]);
+  System.out.println("o aluno " + nome [3] +"é da turma " + turma [3]+ "suas notas foram " + nota [6]+ "e " + nota [7]+ "sua media foi " + media [3]);
+  System.out.println("o aluno " + nome [4] +"é da turma " + turma [4]+ "suas notas foram " + nota [8]+ "e " + nota [9]+ "sua media foi " + media [4]);
+	}
