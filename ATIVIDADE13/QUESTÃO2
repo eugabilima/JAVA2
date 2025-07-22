@@ -3,7 +3,6 @@ import java.util.Scanner;
 public class questao2 {
 	
 Scanner tec = new Scanner(System.in);
-public void questao2() {
 
 double[] nota = new double[2];
 		  
@@ -19,4 +18,3 @@ System.out.println(nota[0]);
 System.out.println(nota[1]);
 
 		}	
-}
