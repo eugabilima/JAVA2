@@ -1,0 +1,8 @@
+package atividade;
+import java.util.Scanner;
+public class questao7 {
+
+	public void quest7() {
+
+
+}}
