@@ -4,5 +4,20 @@ public class questao7 {
 
 	public void quest7() {
 
-
-}}
+Scanner tec = new Scanner(System.in);
+		
+		int vendanegativa= 0;
+		
+		    for (int i = 1; i <= 10; i++) {
+            System.out.print("Digite o valor da venda do vendedor " + i + ": ");
+            double valordavenda = tec.nextDouble();
+            if (valordavenda < 0) {
+                vendanegativa++; 
+            }
+		    System.out.println("numeros de vendedores com vendas negativas é: " + vendanegativa);
+        }
+		    
+		
+}
+	
+}
