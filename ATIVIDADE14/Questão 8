@@ -1,0 +1,31 @@
+package atividade;
+import java.util.Scanner;
+public class questao8 {
+
+	public void quest8() {
+
+Scanner tec = new Scanner(System.in);
+
+		 int[] estoque = new int[5]; 
+	    String[] produtos = new String[5]; 
+		
+	    for (int i = 0; i < estoque.length; i++) {
+	    System.out.print("Adicione o nome do produto:");
+	    produtos[i] = tec.next();
+	    System.out.print("Adicione a quantidade do porduto:");
+	    estoque[i] = tec.nextInt();
+	        }
+	     
+	     int maior = estoque[0];
+	     int indice = 0;
+	     
+	     for (int i = 1; i < estoque.length; i++) {
+	     if (estoque[i] > maior) {
+	     maior = estoque[i];
+	     indice = i;
+	            }
+	        }
+	     System.out.println("Produto: " + produtos[indice]);
+	     System.out.println("Quantidade: " + maior);
+	     
+}}
