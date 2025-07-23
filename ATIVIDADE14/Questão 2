@@ -1,0 +1,13 @@
+package atividade;
+import java.util.Scanner;
+public class questao2 {
+
+public void quest2() {		
+
+	int[] nume= new int [10]; 		
+	System.out.print("soma de todos o numeros de 1 a 100");
+    int gaus= (1+100)*50;		
+    System.out.print("\ntotal gasto:"+gaus);
+		
+	}
+}
