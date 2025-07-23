@@ -1,0 +1,17 @@
+package atividade;
+import java.util.Scanner;
+public class questao5 {
+
+	public void quest5() {
+		
+		Scanner tec = new Scanner(System.in);
+		
+		System.out.println("Adicione um numero");
+		
+		int numero = tec.nextInt();
+		long fatorial = 1;
+        for (int i = 1; i<= numero; i++){
+            fatorial *= i;
+        }
+        System.out.println("o fatorial desse numero é: " + fatorial);
+}}
