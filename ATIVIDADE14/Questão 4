@@ -1,0 +1,15 @@
+package atividade;
+import java.util.Scanner;
+public class questao4 {
+
+	 Scanner tec = new Scanner(System.in);
+	
+	public void quest4() {
+		
+	System.out.println("Adicione um numero");
+		int numero = tec.nextInt();
+		for (int fatorial = 1; fatorial <= 10; fatorial++) {
+		    int v = numero * fatorial;
+		    System.out.println(numero + " x " + fatorial + " = " +v);
+		    
+}}}
