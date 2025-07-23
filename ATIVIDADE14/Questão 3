@@ -1,0 +1,9 @@
+package atividade;
+import java.util.Scanner;
+public class questao3 {
+
+public void quest3() {
+		
+	for (int i = 10; i >= 1; i--) {
+        System.out.print(i);        
+}}}
