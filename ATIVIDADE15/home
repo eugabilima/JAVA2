@@ -1,0 +1,43 @@
+package Main;
+import java.util.Scanner;
+public class home {
+	
+	Scanner tec = new Scanner(System.in);
+
+    public  void IrParahome(){
+    	
+    System.out.println("Bem vindo(a) ao sistema FerramentaFacil, o que você deseja realizar?");
+    System.out.println("1 - Cadastrar ferramentas");
+    System.out.println("2 - Consultar estoque");
+    System.out.println("3 - Atualizar quantidade");
+    System.out.println("4 - Verificar itens");
+    System.out.println("5 - Calcular o valor");
+    
+    int o = tec.nextInt();
+
+    if (o == 1) {
+    	cadastrarferramenta tec = new cadastrarferramenta();
+  	    tec.cadasferra();
+      }
+      else if (o == 2) {
+    	  consultarestoque tec = new consultarestoque();
+  	    tec.conestoque();
+      }
+      else if (o == 3) {
+    	   atualizarquantidade tec = new atualizarquantidade();
+    	   tec.atuqua();
+      }
+      else if (o == 4) {
+   	   verificaritens tec = new verificaritens();
+   	   tec.veritens();
+     }
+      else if (o == 5) {
+      	   valortotal tec = new valortotal();
+      	   tec.vlr();
+        }
+    
+   else {
+          System.out.println("Insira um valor valido");
+      }	  
+   }    	    
+}
