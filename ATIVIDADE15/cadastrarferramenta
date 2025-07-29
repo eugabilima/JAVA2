@@ -1,0 +1,78 @@
+package Main;
+import java.util.Scanner;
+import java.util.ArrayList;
+public class cadastrarferramenta {
+
+	Scanner tec= new Scanner (System.in);
+	
+	public void cadasferra(){
+		
+		System.out.println("Que tipo de ferramenta você gostaria de cadastrar?");
+        System.out.println("1 - Manual / 2 - Eletrônica");
+        int o = tec.nextInt();
+
+        if (o == 1) {
+            manual();
+        } else if (o == 2) {
+        	eletronica();
+        } else {
+            System.out.println("Opção inválida, tente novamente.");
+            cadasferra();
+        }
+    }
+		
+	 private void manual() {
+	        Scanner tec = new Scanner(System.in);
+	        
+	        System.out.println("--- FERRAMENTAS MANUAIS ---");
+	        
+	        ArrayList<String> lista = new ArrayList<>();
+			String entrada;
+			while (true) {
+
+				System.out.print("Cadastre a ferramenta manual, se não deseja adicionar mais ferramentas digite (parar): ");
+				entrada = tec.nextLine();
+				if (entrada.equalsIgnoreCase("parar")) {
+					break;
+				}				
+				lista.add(entrada);
+			}
+			System.out.print("Ferramentas manuais cadastradas!");        
+	       }
+	     
+
+	    private void eletronica() {
+	    	
+	    	 Scanner tec = new Scanner(System.in);
+	    	
+	    	 System.out.println("--- FERAMENTAS ELETRÔNICAS ---");
+	    	 
+	    	 ArrayList<String> eletricas = new ArrayList<>();
+	 		String entrada;
+	 		
+	 		while (true) {
+	 			System.out.print("Cadastre a ferramenta elétrica, se não deseja adicionar mais ferramenta digite (parar): ");
+	 			entrada = tec.nextLine();
+	 			if (entrada.equalsIgnoreCase("parar")) {
+	 				break;
+	 			}
+	 			eletricas.add(entrada);
+	 		}
+	 		System.out.print("Ferramenta manual cadastrada!");
+	 		System.out.print("----------------------------------------------------------------------");
+	 		
+	 		System.out.println("Ver ferramentas listadas?");
+	 		System.out.println("1- sim / 2 - não");
+
+	        int e = tec.nextInt();
+
+	        if (e == 1) {
+	        	consultarestoque tec1 = new consultarestoque () ;
+	        	String[] vetor = eletricas.toArray(new String[0]);
+				tec1.listaEletrica(vetor);
+
+	        } else if (e == 2) {
+	            System.out.println("Ok");
+	        } else {
+	            System.out.println("Opção inválida.");
+}}}	
