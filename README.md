@@ -1,4 +1,4 @@
-# ☕ Java — Resumo
+# ☕ Java 
 
 **Java** é uma linguagem de programação **orientada a objetos**, **portátil** e **robusta**, criada pela Sun Microsystems (hoje Oracle).  
 É amplamente utilizada em sistemas corporativos, aplicações desktop, web, mobile (Android) e até IoT.  
